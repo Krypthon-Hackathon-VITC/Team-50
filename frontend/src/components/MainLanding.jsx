@@ -1,6 +1,6 @@
 import React from 'react';
 // import { Link } from "react-router-dom";
-// import "./MainLanding.css";
+import "./MainLanding.css";
 
 export const MainLanding = () => {
     return (    
