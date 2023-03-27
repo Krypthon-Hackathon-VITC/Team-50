@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+    body {
+        text-align: center;
+        display: flex;
+        min-height: 100vh;
+        align-items: center;
+        color: black;
+        justify-content: center;
+        background-image: linear-gradient(79deg, #4356b1, #89caea 48%, #d6eaea);
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-family: 'Inter', sans-serif;
+      }
+
+
+.navbar{
+    display: flex;
+    position: absolute;
+    width: 95%;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    border-bottom: 2px solid #465A5F;
+    height: 6rem;
+    margin: 0px 2rem;
+}
+
+
+
+#artemis-logo{
+    width: 12rem;
+    scale: 1.25;
+}
+
+#person-logo{
+    width: 4rem;
+    /* position: absolute;
+    left: 7rem; */
+}
+
+.logo{
+    margin-left: -1rem;
+}
+
+.personLogo{
+
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 50rem;
+    border-radius: 4px;
+}
+
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.main-box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main-box-left{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-box-right{
+    display: flex;
+    flex-direction: column;
+}
