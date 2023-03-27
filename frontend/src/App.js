@@ -8,6 +8,7 @@ import { DoctorLogin }  from './components/DoctorLogin';
 import { Chat }  from './components/Chat';
 import { Route, Routes } from "react-router-dom";
 import { PatientLogin } from "./components/PatientLogin";
+import {Questionare2} from "./components/Questionare2"
 
 function App() {
 
