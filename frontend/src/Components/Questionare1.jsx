@@ -1,29 +1,31 @@
 import React from 'react';
 import './Questionare.css';
 
+
+
 export const Questionare1 = () => {
   return (
-     <>  
+    <>
       <nav className='navbar'>
         <div className="logo">
-        <img id='artemis-logo' src={require('../Static/Images/logo.png')} alt="Artemis Logo" />
+          <img id='artemis-logo' src={require('../static/images/logo.png')} alt="Artemis Logo" />
         </div>
         <div className="personLogo">
-        <img id='person-logo' src={require('../Static/Images/personLogo.png')} alt="Person Logo" />
+          <img id='person-logo' src={require('../static/images/personLogo.png')} alt="Person Logo" />
         </div>
       </nav>
-      
+
       <div className="box">
-       <div className="top">
-        <div className="top-left"><h1>Basics</h1> </div>
-        <div className="top-right"><h1>1/3</h1> </div>
+        <div className="top">
+          <div className="top-left"><h1>Basics</h1> </div>
+          <div className="top-right"><h1>1/3</h1> </div>
         </div>
         <div className="main-box">
           <div className="main-box-left">
             <label htmlFor="FirstName">First Name</label>
             <input type="text" />
             <label htmlFor="Number">Phone Number</label>
-            <input type="number" />
+            <input type="phone-number" />
             <label htmlFor="Occupation">Occupation</label>
             <input type="text" />
           </div>
@@ -34,11 +36,15 @@ export const Questionare1 = () => {
             <input type="date" />
             <label htmlFor="BloodGroup">Blood Group</label>
             <input type="text" />
+
           </div>
-        
-       </div>
+        </div>
+        <div className="address">
+          <label htmlFor="Address">Address</label>
+          <textarea name="address" id="text-area" cols="20" rows="5"></textarea>
+        </div>
       </div>
-      </>
+    </>
   )
 }
 
