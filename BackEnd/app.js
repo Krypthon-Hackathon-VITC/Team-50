@@ -18,4 +18,3 @@ app.use('/api/doctorsLogin', require('./Routes/doctorsLogin'))
 app.listen(port, () => {
     console.log(`Listening at port ${port}`)
 })
-    
