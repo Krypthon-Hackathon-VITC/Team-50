@@ -1,104 +1,115 @@
 body {
-    text-align: center;
-    display: flex;
-    min-height: 100vh;
-    align-items: center;
-    color: black;
-    justify-content: center;
-    background-image: linear-gradient(79deg, #4356b1, #89caea 48%, #d6eaea);
-    font-family: 'Inter', sans-serif;
-  }
-  
-  #login-header {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    padding-bottom: 0.4rem;
-  }
-  
-  .small-msg-login {
-    color: grey;
-    font-size: 0.7rem;
-    position: absolute;
-    right: 23.5rem;
-    bottom: 28rem;
-  }
-  
-  
-  #sideImg {
-    position: relative;
-    width: 24rem
-  }
-  
-  #DocsideImg {
-    position: relative;
-    width: 24rem
-  }
-  
-  .login-container {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .login-form {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    top: 1.5rem;
-  }
-  
-  .Doc-login-form {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    top: 1.5rem;
-    left: 8rem;
-  
-  }
-  
-  .auth-form-container {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    padding: 2rem;
-    border: 1px solid black;
-    border-radius: 40px;
-    width: 50rem;
-    background-color: #e2f3fb;
-  }
-  
-  
-  label {
-    text-align: left;
-    padding: 0.25rem 0;
-  }
-  
-  input {
-    margin: 0.5rem 0;
-    border: none;
-    padding: 1rem;
-    border-radius: 10px;
-  }
-  
-  #logIn,
-  #DoclogIn {
-    margin: 0.2rem;
-    border: none;
-    padding: 0rem;
-    border-radius: 10px;
-    cursor: pointer;
-    color: white;
-    background-color: #456188;
-    height: 2.4rem;
-    width: 6rem;
-  }
-  
-  #DoclogIn {
-    bottom: 9rem;
-  }
-  
-  .link-btn {
-    background: none;
-    color: black;
-    text-decoration: none;
-  }
+  text-align: center;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  color: black;
+  justify-content: center;
+  background-image: linear-gradient(79deg, #4356b1, #89caea 48%, #d6eaea);
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  position: absolute;
+  bottom: 4rem;
+  left: 14rem;
+  background-color: #e2f3fb;
+  display: flex;
+  align-items: center;
+  width: 70rem;
+  height: 32rem;
+  border-radius: 3rem;
+}
+
+#doc-img {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 3rem;
+}
+
+.login-content {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: space-evenly;
+  height: 32rem;
+  width: 40rem;
+  padding: 0 5rem;
+}
+
+.login-credentials {
+  display: flex;
+  height: 25rem;
+  flex-direction: column;
+  /* justify-content: space-evenly; */
+}
+
+.login-head{
+  border-bottom: 1px solid rgb(0,0,0,0.35);
+  height: 3rem;
+  display: flex;
+  align-items: flex-end;
+}
+
+.a-btn{
+  text-decoration: none;
+  color: black;
+  padding-bottom: 0.5rem;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 15px;
+  padding-right: 1.5rem;
+}
+
+#welc{
+  padding-top: 1rem;
+}
+
+#ltya{
+  font-style: inter;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 12.1px;
+  color: black;
+  opacity: 39%;
+}
+
+.EP{
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18.15px;
+  margin-top: 2rem;
+}
+
+#DoclogIn{
+  margin-top: 2rem;
+  background-color: #456188;
+  color: #effaff;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  width: 7rem;
+  height:2.5rem;
+  border-radius: 10px;
+}
+
+.booxes{
+  box-sizing: border-box;
+  background: #a4daf6;
+  border: 2px solid #effaff;
+  border-radius: 10px;
+  width:30rem;
+}
+
+.other-login-ways{
+  display: flex;
+  margin-bottom: 4rem;
+}
+
+.other-login-ways p{
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 15px;
+  color: rgba(0,0,0,0.39);
+}
