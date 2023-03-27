@@ -1,5 +1,6 @@
 import './App.css';
 import { Questionare1 } from './components/Questionare1';
+import { Questionare2 } from './components/Questionare2';
 import { useState } from 'react';
 import {MainLanding} from "./components/MainLanding";
 import {Choose} from './components/Choose'

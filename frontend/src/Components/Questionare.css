@@ -118,3 +118,9 @@ input {
     border-radius: 10px;
     background-color: #E0E0E0;
   }
+
+  .query-box{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
