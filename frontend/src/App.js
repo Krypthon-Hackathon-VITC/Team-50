@@ -6,10 +6,11 @@ import {Choose} from './components/Choose'
 import { DoctorLogin }  from './components/DoctorLogin';
 import { Route, Routes } from "react-router-dom";
 import { PatientLogin } from "./components/PatientLogin";
+import {Questionare2} from "./components/Questionare2"
 
 function App() {
 
-  const [ user, setLoginUser] = useState({})
+  const [ setLoginUser] = useState({})
 
   return (
     <div className="App">
