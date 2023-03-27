@@ -11,6 +11,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<MainLanding />} />
         <Route exact path="/choose" element={<Choose />} />
+        <Route exact path="/questionare1" element={<Questionare1 />} />
       </Routes>
     </div>
   );
