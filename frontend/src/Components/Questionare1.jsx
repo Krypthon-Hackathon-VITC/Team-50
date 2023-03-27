@@ -1,15 +1,19 @@
 import React from 'react';
 import './Questionare.css';
 
+
+
 export const Questionare1 = () => {
   return (
     <>
       <nav className='navbar'>
         <div className="logo">
-        <img id='artemis-logo' src={require('../static/images/logo.png')} alt="Artemis Logo" />
+          <img id='artemis-logo' src={require('../static/images/logo.png')} alt="Artemis Logo" />
+        {/* <img id='artemis-logo' src={require('../static/images/logo.png')} alt="Artemis Logo" /> */}
         </div>
         <div className="personLogo">
-        <img id='person-logo' src={require('../static/images/personLogo.png')} alt="Person Logo" />
+          <img id='person-logo' src={require('../static/images/personLogo.png')} alt="Person Logo" />
+        {/* <img id='person-logo' src={require('../static/images/personLogo.png')} alt="Person Logo" /> */}
         </div>
       </nav>
 
@@ -23,7 +27,7 @@ export const Questionare1 = () => {
             <label htmlFor="FirstName">First Name</label>
             <input type="text" />
             <label htmlFor="Number">Phone Number</label>
-            <input type="number" />
+            <input type="phone-number" />
             <label htmlFor="Occupation">Occupation</label>
             <input type="text" />
           </div>
@@ -34,9 +38,10 @@ export const Questionare1 = () => {
             <input type="date" />
             <label htmlFor="BloodGroup">Blood Group</label>
             <input type="text" />
-          </div>
 
-        </div>
+          </div>
+        
+       </div>
       </div>
     </>
   )

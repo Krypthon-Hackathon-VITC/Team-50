@@ -39,12 +39,10 @@
 
 #person-logo{
     width: 4rem;
-    /* position: absolute;
-    left: 7rem; */
 }
 
 .logo{
-    margin-left: -1rem;
+    margin-left: 1.65rem;
 }
 
 .personLogo{
@@ -55,8 +53,14 @@
     display: flex;
     flex-direction: column;
     background-color: white;
-    width: 50rem;
+    width: 70rem;
+    height: 27rem;
     border-radius: 4px;
+    color: black;
+    padding: 0 4rem;
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+    margin-top: 4rem;
 }
 
 .top{
@@ -64,7 +68,14 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin: 1rem 0rem;
 
+}
+
+.top-left{
+    border-bottom: 1px solid black;
+    width: 42rem;
+    text-align: left;
 }
 
 .main-box{
@@ -76,9 +87,34 @@
 .main-box-left{
     display: flex;
     flex-direction: column;
+    text-align: left
 }
 
 .main-box-right{
     display: flex;
     flex-direction: column;
+    text-align: left;
 }
+
+.address{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+input {
+    margin: 0.5rem 0;
+    border: none;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #E0E0E0;
+    width: 25rem;
+    height: 0.5rem; 
+  }
+
+  #text-area{
+    margin: 0.5rem 0;
+    border: none;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #E0E0E0;
+  }
