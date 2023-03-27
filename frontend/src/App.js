@@ -4,11 +4,12 @@ import { useState } from 'react';
 import {MainLanding} from "./components/MainLanding";
 import {Choose} from './components/Choose'
 import { DoctorLogin }  from './components/DoctorLogin';
+import { Chat }  from './components/Chat';
 import { Route, Routes } from "react-router-dom";
 
 function App() {
 
-  const [ user, setLoginUser] = useState({})
+  const [setLoginUser] = useState({})
 
 
   const email = "abhi@gmail.com"
