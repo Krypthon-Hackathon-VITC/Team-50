@@ -1,11 +1,15 @@
 import './App.css';
 import { Questionare1 } from './components/Questionare1';
-import { MainLanding } from "./components/MainLanding";
-import { Choose } from './components/Choose'
-import { Chat } from './components/Chat'
+import { useState } from 'react';
+import {MainLanding} from "./components/MainLanding";
+import {Choose} from './components/Choose'
+import { DoctorLogin }  from './components/DoctorLogin';
 import { Route, Routes } from "react-router-dom";
 
 function App() {
+
+  const [ user, setLoginUser] = useState({})
+
 
   const email = "abhi@gmail.com"
 
@@ -14,6 +18,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<MainLanding />} />
         <Route exact path="/choose" element={<Choose />} />
+        <Route exact path="/DoctorLogin" element={<DoctorLogin setLoginUser={setLoginUser}/>} />
         <Route exact path="/questionare1" element={<Questionare1 />} />
         <Route exact path="/chat" element={<Chat username={email} />} />
       </Routes>

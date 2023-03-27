@@ -6,10 +6,10 @@ export const Questionare1 = () => {
     <>
       <nav className='navbar'>
         <div className="logo">
-          <img id='artemis-logo' src={require('../static/images/logo.png')} alt="Artemis Logo" />
+        <img id='artemis-logo' src={require('../static/images/logo.png')} alt="Artemis Logo" />
         </div>
         <div className="personLogo">
-          <img id='person-logo' src={require('../static/images/personLogo.png')} alt="Person Logo" />
+        <img id='person-logo' src={require('../static/images/personLogo.png')} alt="Person Logo" />
         </div>
       </nav>
 
