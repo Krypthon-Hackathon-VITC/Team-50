@@ -4,13 +4,17 @@ import { useState } from 'react';
 import {MainLanding} from "./components/MainLanding";
 import {Choose} from './components/Choose'
 import { DoctorLogin }  from './components/DoctorLogin';
+import { Chat }  from './components/Chat';
 import { Route, Routes } from "react-router-dom";
 import { PatientLogin } from "./components/PatientLogin";
 import {Questionare2} from "./components/Questionare2"
 
 function App() {
 
-  const [ setLoginUser] = useState({})
+  const [setLoginUser] = useState({})
+
+
+  const email = "abhi@gmail.com"
 
   return (
     <div className="App">
@@ -21,6 +25,7 @@ function App() {
         <Route exact path="/questionare1" element={<Questionare1 />} />
         <Route exact path="/PatientLogin" element={<PatientLogin setLoginUser={setLoginUser}/>} />
         <Route exact path="/questionare2" element={<Questionare2 />} />
+        <Route exact path="/chat" element={<Chat username={email} />} />
       </Routes>
     </div>
   );

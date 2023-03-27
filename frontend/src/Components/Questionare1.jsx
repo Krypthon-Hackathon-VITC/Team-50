@@ -40,11 +40,8 @@ export const Questionare1 = () => {
             <input type="text" />
 
           </div>
-        </div>
-        <div className="address">
-          <label htmlFor="Address">Address</label>
-          <textarea name="address" id="text-area" cols="20" rows="5"></textarea>
-        </div>
+        
+       </div>
       </div>
     </>
   )
