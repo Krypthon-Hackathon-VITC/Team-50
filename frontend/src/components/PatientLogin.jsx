@@ -82,7 +82,7 @@ export const PatientLogin = ({ setLoginUser }) => {
                         <GoogleLogin onSuccess={onLoginSuccess} onError={onLoginFailure} />
                         <p></p>
                         <p></p>
-                        <h3 id='feed'></h3>
+                        <span id='feed'></span>
                     </form>
 
                 </div>

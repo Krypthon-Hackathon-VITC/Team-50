@@ -48,9 +48,9 @@ export const DoctorLogin = ({ setLoginUser }) => {
     return (
         <div>
             <div className="auth-form-container">
-                <header id="login-header">
+                <div id="login-header">
                     <Link  className='link-btn'>Login</Link>
-                </header>
+                </div>
 
                 <h1>Welcome to Polaris</h1>
                 <p className="small-msg-login">Login to your account</p>
@@ -67,7 +67,7 @@ export const DoctorLogin = ({ setLoginUser }) => {
                         <button id="DoclogIn" type="submit">Log In</button>
                         <p></p>
                         <p></p>
-                        <h3 id='feed'></h3>
+                        <span id='feed'></span>
 
                 </form>
                 </div>
