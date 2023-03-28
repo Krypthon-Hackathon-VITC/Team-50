@@ -22,13 +22,16 @@ We used MERN stack (mongoDB, express JS, react JS, node JS) to make our webpage.
 ## Walkthrough
 Now you can explore through our web app through the launched react app.
 
-1. Use the "login/sign up" button on home page to reach the choose page. you can pick from doctor or patient portal from the options on this page.![Login](https://i.imgur.com/d5NNKdP.png)
+1. Use the "login/sign up" button on home page to reach the choose page. you can pick from doctor or patient portal from the options on this page.
+![Login](https://i.imgur.com/d5NNKdP.png)
+
 2. Loging in from the Doctor profile, you will need an unique employee id and a password, registered with on our website through the hospitals the doctors are from. Here is a dummy account viewers can test the page with:![Patient/Doctor](https://i.imgur.com/1Nn3X1d.png)
 
     employeeID: "EMP1234"
     password: "password123"
 
 3. You get redirected to the Doctor landing page upon entering the correct credentials, otherwise an error message is displayed on your screen. ![Login2](https://i.imgur.com/1Nn3X1d.png)
+
 4.  Viewer can register their account using patient registration page, and use those credentials to login using the login page. upon using the correct credentials, user will be redirected to the patient landing page.
 
 ### Note: Testers need to have the latest versions of React JS, Node JS, MongoDB, Express JS to successfully run this project.
