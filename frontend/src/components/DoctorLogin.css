@@ -9,6 +9,12 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+.artemis{
+  position: absolute;
+  top: -49px;
+  left: 23px;
+}
+
 .container {
   position: absolute;
   bottom: 4rem;
