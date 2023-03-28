@@ -37,10 +37,7 @@ export const Questionare3 = () => {
               <label htmlFor="CurrIllness">Current Illness</label>
               <input type="text" />
             </div>
-            <div className="flex">
-              <label htmlFor="Status">Status</label>
-              <input type="text" />
-            </div>
+            <button type='submit'>Submit</button>
           </form>
         </div>
       </div>

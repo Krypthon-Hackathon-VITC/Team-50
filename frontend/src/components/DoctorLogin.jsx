@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import './DoctorLogin.css';
 import React, { useState } from 'react'
 import axios from 'axios'
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const url = 'http://localhost:3001/api/doctorsLogin/login'
 
@@ -43,7 +43,8 @@ export const DoctorLogin = ({ setLoginUser }) => {
             .then(res => {
                 console.log(res.data);
                 setLoginUser(res.data.user)
-                navigate("/DoctorLanding")
+                const data=res.data.name;
+                navigate("/DoctorLanding", {state:{id:data}})
             })
             .catch(err => {
                 console.log(err)

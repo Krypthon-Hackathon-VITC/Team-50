@@ -1,9 +1,13 @@
 import React from 'react'
 import './DoctorLanding.css'
 import { Link } from 'react-router-dom';
+import { Name } from "./PatientLogin";
+import { useLocation, useNavigate } from "react-router-dom";
 
 export const PatientLanding = () => {
+  const location = useLocation();
   return (
+   
     <div>
         <div className="sidenav">
                 <img id='logo-small'  src={require('../static/images/logo-small.png')} />
@@ -22,7 +26,7 @@ export const PatientLanding = () => {
       <div className="body">
         <div className="title">
           <div className="text"> 
-            <span id='greet'>  Welcome, <span id='name'>Mr. Sagar</span> </span>
+            <span id='greet'>  Welcome, <span id='name'>{location.state.id}</span> </span>
             <span>Only a life lived in the service to others is worth living</span>
           </div>
           <div className="icons">
