@@ -4,6 +4,7 @@ import axios from 'axios'
 import { useNavigate } from "react-router-dom";
 import { GoogleLogin } from '@react-oauth/google';
 import jwt_decode from "jwt-decode";
+import {PatientLanding} from "../components/PatientLanding";
 
 export const PatientLogin = ({ setLoginUser }) => {
     const onLoginSuccess = (res) => {
