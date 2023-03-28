@@ -113,9 +113,18 @@ body {
   margin-bottom: 4rem;
 }
 
+.lower-box{
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  color: red;
+}
+
 .other-login-ways p{
   font-weight: 600;
   font-size: 13px;
   line-height: 15px;
   color: rgba(0,0,0,0.39);
+  padding-right: 1rem;
 }

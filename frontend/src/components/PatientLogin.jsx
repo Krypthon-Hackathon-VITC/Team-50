@@ -48,7 +48,7 @@ export const PatientLogin = ({ setLoginUser }) => {
             })
             .catch(err => {
                 console.log(err)
-                feed.textContent = err.response.data.error
+                feed.textContent = "*" + err.response.data.error
             })
     }
 
@@ -62,38 +62,38 @@ export const PatientLogin = ({ setLoginUser }) => {
     return (
         <div>
             <div className="artemis">
-            <img id='artemis-logo' src={require('../static/images/logo.png')} alt="Artemis Logo" />
+                <img id='artemis-logo' src={require('../static/images/logo.png')} alt="Artemis Logo" />
             </div>
-        <div className="container">
-            <div className="doc-img">
-            <img id="doc-img" src={require('../static/images/login-register.png')} alt="login-register" />
-            </div>
-            <div className="login-content">
-                <div className="login-head">
-                    <Link to="/PatientLogin" className="a-btn" style={currLink==="http://localhost:3000/PatientLogin"?{borderBottom: '3px solid #456188'}:null}>Login</Link>
-                    <Link to="/PatientRegister" className="a-btn" style={currLink==="http://localhost:3000/PatientRegister"?{borderBottom: '3px solid #456188'}:null}>Register</Link>
-                 
+            <div className="container">
+                <div className="doc-img">
+                    <img id="doc-img" src={require('../static/images/login-register.png')} alt="login-register" />
                 </div>
-                
-                <h1 id='welc'>Welcome to Artemis</h1>
-                <span id='ltya'>Login to your account</span>
-                <form className="login-credentials" onSubmit={submit}>
-                    <label className='EP' htmlFor="employee">Email</label>
-                    <input className='booxes' value={data.employee} type="text" placeholder="Email" id="employee" name="employee" onChange={(e) => handle(e)} />
-                    <label className='EP' htmlFor="password">Password</label>
-                    <input className='booxes' value={data.pass} type="password" placeholder="********" id="pass" name="pass" onChange={(e) => handle(e)} />
-                    <button id="DoclogIn" type="submit">Log In</button>
-                    <p></p>
-                    <p></p>
-                    <span id='feed'></span>
-                </form>
+                <div className="login-content">
+                    <div className="login-head">
+                        <Link to="/PatientLogin" className="a-btn" style={currLink === "http://localhost:3000/PatientLogin" ? { borderBottom: '3px solid #456188' } : null}>Login</Link>
+                        <Link to="/PatientRegister" className="a-btn" style={currLink === "http://localhost:3000/PatientRegister" ? { borderBottom: '3px solid #456188' } : null}>Register</Link>
 
-                <div className="other-login-ways">
-                    <p>Login using</p>
-                    <GoogleLogin onSuccess={onLoginSuccess} onError={onLoginFailure} />
+                    </div>
+
+                    <h1 id='welc'>Welcome to Artemis</h1>
+                    <span id='ltya'>Login to your account</span>
+                    <form className="login-credentials" onSubmit={submit}>
+                        <label className='EP' htmlFor="employee">Email</label>
+                        <input className='booxes' value={data.employee} type="text" placeholder="Email" id="employee" name="employee" onChange={(e) => handle(e)} />
+                        <label className='EP' htmlFor="password">Password</label>
+                        <input className='booxes' value={data.pass} type="password" placeholder="********" id="pass" name="pass" onChange={(e) => handle(e)} />
+                        <div className="lower-box">
+                            <button id="DoclogIn" type="submit">Log In</button>
+                            <span id='feed'></span>
+                        </div>
+                    </form>
+
+                    <div className="other-login-ways">
+                        <p>Login using</p>
+                        <GoogleLogin onSuccess={onLoginSuccess} onError={onLoginFailure} />
+                    </div>
                 </div>
             </div>
-        </div>
         </div>
     );
 }

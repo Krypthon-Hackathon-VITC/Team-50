@@ -33,7 +33,7 @@ export const PatientRegister = () => {
             })
             .catch(err => {
                 console.log(err)
-                feed.textContent = err.response.data.error
+                feed.textContent = "*" + err.response.data.error
             })
     }
 
@@ -71,10 +71,10 @@ export const PatientRegister = () => {
                     <input className='booxes' value={data.email} type="text" placeholder="Email" id="email" name="email" onChange={(e) => handle(e)} />
                     <label className='EP' htmlFor="password">Password</label>
                     <input className='booxes' value={data.pass} type="password" placeholder="********" id="pass" name="pass" onChange={(e) => handle(e)} />
-                    <button id="DoclogIn" type="submit">Sign Up</button>
-                    <p></p>
-                    <p></p>
-                    <span id='feed'></span>
+                    <div className="lower-box">
+                            <button id="DoclogIn" type="submit">Sign Up</button>
+                            <span id='feed'></span>
+                        </div>
                 </form>
             </div>
         </div>
