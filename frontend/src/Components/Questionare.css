@@ -10,7 +10,7 @@
         align-items: center;
         color: black;
         justify-content: center;
-        background-image: linear-gradient(79deg, #4356b1, #89caea 48%, #d6eaea);
+        background: linear-gradient(79deg, #4356b1, #89caea 48%, #d6eaea);
         background-size: cover;
         background-repeat: no-repeat;
         font-family: 'Inter', sans-serif;
