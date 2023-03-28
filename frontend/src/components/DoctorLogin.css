@@ -1,10 +1,12 @@
 body {
+  min-height: 100vh;
   color: black;
-  background: linear-gradient(79deg, #4356b1, #89caea 48%, #d6eaea);
+  background-image: linear-gradient(79deg, #4356b1, #89caea 48%, #d6eaea);
+  background-repeat: no-repeat;
   font-family: 'Inter', sans-serif;
 }
 
-.artemis{
+.artemis {
   position: absolute;
   top: -49px;
   left: 23px;
@@ -45,14 +47,14 @@ body {
   /* justify-content: space-evenly; */
 }
 
-.login-head{
-  border-bottom: 1px solid rgb(0,0,0,0.35);
+.login-head {
+  border-bottom: 1px solid rgb(0, 0, 0, 0.35);
   height: 3rem;
   display: flex;
   align-items: flex-end;
 }
 
-.a-btn{
+.a-btn {
   text-decoration: none;
   color: black;
   padding-bottom: 0.5rem;
@@ -62,11 +64,11 @@ body {
   padding-right: 1.5rem;
 }
 
-#welc{
+#welc {
   padding-top: 1rem;
 }
 
-#ltya{
+#ltya {
   font-style: inter;
   font-weight: 600;
   font-size: 13px;
@@ -75,14 +77,14 @@ body {
   opacity: 39%;
 }
 
-.EP{
+.EP {
   font-weight: 600;
   font-size: 15px;
   line-height: 18.15px;
   margin-top: 2rem;
 }
 
-#DoclogIn{
+#DoclogIn {
   margin-top: 2rem;
   background-color: #456188;
   color: #effaff;
@@ -91,26 +93,35 @@ body {
   line-height: 18px;
   text-align: center;
   width: 7rem;
-  height:2.5rem;
+  height: 2.5rem;
   border-radius: 10px;
 }
 
-.booxes{
+.booxes {
   box-sizing: border-box;
   background: #a4daf6;
   border: 2px solid #effaff;
   border-radius: 10px;
-  width:30rem;
+  width: 30rem;
 }
 
-.other-login-ways{
+.other-login-ways {
   display: flex;
   margin-bottom: 4rem;
 }
 
-.other-login-ways p{
+.lower-box {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  color: red;
+}
+
+.other-login-ways p {
   font-weight: 600;
   font-size: 13px;
   line-height: 15px;
-  color: rgba(0,0,0,0.39);
+  color: rgba(0, 0, 0, 0.39);
+  padding-right: 1rem;
 }
