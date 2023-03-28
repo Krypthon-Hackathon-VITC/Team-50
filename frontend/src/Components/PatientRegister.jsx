@@ -59,7 +59,6 @@ export const PatientRegister = () => {
                     <div className="login-head">
                         <Link to="/PatientLogin" className="a-btn" style={currLink === "http://localhost:3000/PatientLogin" ? { borderBottom: '3px solid #456188' } : null}>Login</Link>
                         <Link to="/PatientRegister" className="a-btn" style={currLink === "http://localhost:3000/PatientRegister" ? { borderBottom: '3px solid #456188' } : null}>Register</Link>
-
                     </div>
 
                     <h1 id='welc'>Welcome to Artemis</h1>

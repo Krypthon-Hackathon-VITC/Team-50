@@ -19,7 +19,13 @@ import { DocLanding } from './components/DocLanding';
 function App() {
 
   const [LoginUser, setLoginUser] = useState({})
+  // const [name, setName] = useState('Abhi')
 
+  // const cName = (n) => {
+  //   setName(n);
+  // }
+
+  // console.log(name);
 
   const email = "abhi@gmail.com"
 
@@ -34,7 +40,6 @@ function App() {
         <Route exact path="/PatientRegister" element={<PatientRegister />} />
         <Route exact path="/questionare2" element={<Questionare2 />} />
         <Route exact path="/chat" element={<Chat username={email} />} />
-        <Route exact path="/PatientLanding" element={<PatientLanding />} />
         <Route exact path="/DoctorLanding" element={<DoctorLanding />} />
         <Route exact path="/PatientLanding" element={<PatientLanding />} />
         <Route exact path="/DocSlider" element={<DocLanding />} />
