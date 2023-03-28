@@ -87,7 +87,6 @@ export const PatientLogin = ({ setLoginUser }) => {
                             <span id='feed'></span>
                         </div>
                     </form>
-
                     <div className="other-login-ways">
                         <p>Login using</p>
                         <GoogleLogin onSuccess={onLoginSuccess} onError={onLoginFailure} />
