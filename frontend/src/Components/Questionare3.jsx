@@ -14,7 +14,20 @@ export const Questionare3 = () => {
       </nav>
       
       <div className="box">
-        
+        <div className="top-container">
+          <div className="head-left">
+           Medical Jargon
+          </div>
+          <div className="head-right">3/3</div>
+        </div>
+
+        <div className="questions">
+          <form >
+            <label htmlFor="Communication">Preferred form of Communication</label>
+            <input type="text" />
+            <label htmlFor="Preferences"></label>
+          </form>
+        </div>
       </div>
     </div>
   )
