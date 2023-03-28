@@ -13,6 +13,7 @@ import {PatientRegister} from "./components/PatientRegister";
 import {DoctorLanding} from "./components/DoctorLanding";
 import {PatientLanding} from "./components/PatientLanding";
 import { DocLanding } from './components/DocLanding';
+import { PatientInfo } from './components/PatientInfo';
 
 
 
@@ -39,6 +40,7 @@ function App() {
         <Route exact path="/PatientLanding" element={<PatientLanding />} />
         <Route exact path="/DocSlider" element={<DocLanding />} />
         <Route exact path="/questionare3" element={<Questionare3 />} />
+        <Route exact path="/patientInfo" element={<PatientInfo />} />
       </Routes>
     </div>
   );
