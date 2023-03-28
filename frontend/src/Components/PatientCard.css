@@ -1,4 +1,13 @@
 .card{
-    display: flex;
-    flex-direction: ;
+   text-align: left;
+   margin-left: 2.5rem;
+   font-size: 12px;
+}
+
+.swiper-slide, swiper-slide{
+ border-radius: 20px;
+ background-color: white;
+ padding-top: 0.9rem;
+ padding-bottom: 2rem;
+ padding-left: 0.8rem;
 }
