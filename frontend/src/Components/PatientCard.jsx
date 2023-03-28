@@ -4,7 +4,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { FreeMode } from "swiper";  
 import 'swiper/css'
 import "swiper/css/free-mode";
-
 export const PatientCard = () => {
     const [patients, setPatients] = useState([
         { name: 'Ravi', age: '25', gender: 'Male', diagnosis: 'Fever', id: 1 },
