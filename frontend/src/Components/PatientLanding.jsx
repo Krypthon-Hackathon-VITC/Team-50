@@ -27,7 +27,7 @@ export const PatientLanding = () => {
       <div className="body">
         <div className="title">
           <div className="text"> 
-            <span id='greet'>  Welcome, <span id='name'></span> </span>
+            <span id='greet'>  Welcome, <span id='name'>{location.state.id}</span> </span>
             <span id='small-text'>Only a life lived in the service to others is worth living</span>
           </div>
           <div className="icons">
