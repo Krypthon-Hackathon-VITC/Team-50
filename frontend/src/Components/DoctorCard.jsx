@@ -28,7 +28,7 @@ export const DoctorCard = () => {
                 slidesPerView={5}   
                 spaceBetween={30}
             >
-                {patients.map((doctor) => (
+                {doctors.map((doctor) => (
                     <SwiperSlide>
                         <div className="doctorDetails" key={doctor.id}>
                             <p>Name:{doctor.name}</p>
