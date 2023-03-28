@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import React, { useEffect, useState } from 'react'
 import {createContext} from "react";
-import './PatientLogin.css';
 import axios from 'axios'
 import { useLocation, useNavigate } from "react-router-dom";
 import { GoogleLogin } from '@react-oauth/google';
