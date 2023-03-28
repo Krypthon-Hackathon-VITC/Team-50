@@ -3,11 +3,41 @@ import './DoctorLanding.css';
 import { Link } from 'react-router-dom';
 import { useLocation, useNavigate } from "react-router-dom";
 import { PatientCard } from './PatientCard';
+import axios from 'axios'
 
+const url = 'http://localhost:3001/api/doctors/doctors-details'
+const url2 = 'http://localhost:3001/api/doctors/patientGroup'
+let ddata;
+let list;
 
 
 export const DoctorLanding = () => {
   const location = useLocation();
+
+  // console.log(location.state.id2)
+  axios.post(url, {
+    "employeeID":  location.state.id
+  })
+    .then(res => {
+      console.log(res.data);
+      const ddata = res.data.speciality
+    })
+    .catch(err => {
+      console.log(err)
+    })
+
+    axios.post(url2, {
+      "currentIllness":  "Neurology",
+      "status": "Not Assigned"
+    })
+      .then(res => {
+        console.log(res.data);
+        const list = res.data
+      })
+      .catch(err => {
+        console.log(err)
+      })
+
   return (
     <div>
       <div className="sidenav">
@@ -24,9 +54,9 @@ export const DoctorLanding = () => {
       </div>
       <div className="body">
         <div className="title">
-          <div className="text"> 
-            <span id='greet'>  Welcome, <span id='name'>{location.state.id}</span> </span>
-            <span>Only a life lived in the service to others is worth living</span>
+          <div className="text">
+            <span id='greet'>  Welcome, <span id='name'>{location.state.id2}</span> </span>
+            <span id="small-text">Only a life lived in the service to others is worth living</span>
           </div>
           <div className="icons">
             <span className="sq"><img id='search' src={require('../static/images/search.png')} /></span>
@@ -39,24 +69,24 @@ export const DoctorLanding = () => {
             <container className='sqInfo'>
               <span>Total</span>
               <span>Patients</span>
-              <span>63</span>
+              <span className='number'>63</span>
             </container>
             <container className='sqInfo'>
               <span>Remaining</span>
               <span>Patients</span>
-              <span>44</span>
+              <span className='number'>44</span>
             </container>
             <container className='sqInfo' id='appointment'>
               <span>Next</span>
               <span>Appointment</span>
-              <span>05:29</span>
+              <span className='number'>05:29</span>
             </container>
           </div>
         </div>
         <div className="recent">
           <h3>Recent Patients</h3>
           <div className="mainboxes">
-            <PatientCard />
+            <PatientCard list={list} />
           </div>
         </div>
         <div className="available">

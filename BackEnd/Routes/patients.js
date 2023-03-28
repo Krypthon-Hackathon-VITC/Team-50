@@ -21,10 +21,10 @@ router.post('/patientForm', async (req, res) => {
 });
 
 router.post('/patient-details', (req, res) => {
-    const { fullName, email} = req.body;
+    const { fullName, email } = req.body;
 
     // Find patient with matching name, email, and password
-    Patient.findOne({ fullName, email})
+    Patient.findOne({ fullName, email })
         .then((patient) => {
             if (patient) {
                 // Return patient details if found

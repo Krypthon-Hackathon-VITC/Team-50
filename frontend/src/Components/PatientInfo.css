@@ -1,0 +1,11 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.box1{
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid black;
+}

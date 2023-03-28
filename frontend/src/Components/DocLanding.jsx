@@ -1,5 +1,4 @@
 import React from 'react';
-
 import {PatientCard} from "./PatientCard";
 import 'swiper/css'
 import "swiper/css/free-mode";

@@ -43,8 +43,9 @@ export const DoctorLogin = ({ setLoginUser }) => {
             .then(res => {
                 console.log(res.data);
                 setLoginUser(res.data.user)
-                const data=res.data.name;
-                navigate("/DoctorLanding", {state:{id:data}})
+                const data=res.data.employeeID;
+                const data2=res.data.name;
+                navigate("/DoctorLanding", {state:{id:data, id2:data2}})
             })
             .catch(err => {
                 console.log(err)

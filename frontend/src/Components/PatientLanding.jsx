@@ -3,6 +3,7 @@ import './DoctorLanding.css'
 import { Link } from 'react-router-dom';
 import { Name } from "./PatientLogin";
 import { useLocation, useNavigate } from "react-router-dom";
+import { DoctorCard } from './DoctorCard';
 
 export const PatientLanding = () => {
   const location = useLocation();
@@ -27,7 +28,7 @@ export const PatientLanding = () => {
         <div className="title">
           <div className="text"> 
             <span id='greet'>  Welcome, <span id='name'>{location.state.id}</span> </span>
-            <span>Only a life lived in the service to others is worth living</span>
+            <span id='small-text'>Only a life lived in the service to others is worth living</span>
           </div>
           <div className="icons">
             <span className="sq"><img id='search' src={require('../static/images/search.png')} /></span>
@@ -45,17 +46,19 @@ export const PatientLanding = () => {
         <div className="recent">
           <h3>Currently Available Specialists</h3>
           <div className="mainboxes">
-            <span className="sqbox2">AA</span>
+            {/* <span className="sqbox2">AA</span>
             <span className="sqbox2">BB</span>
-            <span className="sqbox2">CC</span>
+            <span className="sqbox2">CC</span> */}
+            <DoctorCard/>
           </div>
         </div>
         <div className="available">
           <h3>Our Best Specialists</h3>
           <div className="mainboxes2">
-            <span className="sqbox3">AAA</span>
+            {/* <span className="sqbox3">AAA</span>
             <span className="sqbox3">BBB</span>
-            <span className="sqbox3">CCC</span>
+            <span className="sqbox3">CCC</span> */}
+            <DoctorCard/>
           </div>
         </div>
       </div>
