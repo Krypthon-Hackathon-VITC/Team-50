@@ -23,6 +23,7 @@ We used MERN stack (mongoDB, express JS, react JS, node JS) to make our webpage.
 Now you can explore through our web app through the launched react app.
 
 1. Use the "login/sign up" button on home page to reach the choose page. you can pick from doctor or patient portal from the options on this page.
+
 ![Login](https://i.imgur.com/d5NNKdP.png)
 
 2. Loging in from the Doctor profile, you will need an unique employee id and a password, registered with on our website through the hospitals the doctors are from. Here is a dummy account viewers can test the page with:![Patient/Doctor](https://i.imgur.com/1Nn3X1d.png)
