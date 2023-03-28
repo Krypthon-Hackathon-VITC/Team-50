@@ -1,6 +1,7 @@
 import React from 'react'
 import './DoctorLanding.css'
 
+
 export const DoctorLanding = () => {
   return (
     <div>
@@ -17,8 +18,8 @@ export const DoctorLanding = () => {
       <div className="body">
         <div className="title">
           <div className="text"> 
-            <span id='greet'>  Welcome, <span id='name'>Mr. Sagar</span> </span>
-            <span>Only a life lived in the service to others is worth living</span>
+            <span id='greet'>  Good Morning, <span id='name'> Dr. Mishra</span> </span>
+            <span id='small-text'>Only a life lived in the service to others is worth living</span>
           </div>
           <div className="icons">
             <span className="sq"><img id='search' src={require('../static/images/search.png')} /></span>
@@ -47,7 +48,7 @@ export const DoctorLanding = () => {
           </div>
         </div>
         <div className="recent">
-          <h3>Currently Available Specialists</h3>
+          <h3>Recent Patients</h3>
           <div className="mainboxes">
             <span className="sqbox2">AA</span>
             <span className="sqbox2">BB</span>
@@ -55,7 +56,7 @@ export const DoctorLanding = () => {
           </div>
         </div>
         <div className="available">
-          <h3>Our Best Specialists</h3>
+          <h3>Patient Queue</h3>
           <div className="mainboxes2">
             <span className="sqbox3">AAA</span>
             <span className="sqbox3">BBB</span>

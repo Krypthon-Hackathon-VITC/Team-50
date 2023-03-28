@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+
 .sidenav {
     background-color: #E7ECF1;
     height: 100vh;
@@ -13,23 +16,27 @@
 }
 
 #logo-small {
-    width:4.5rem;
+    width: 4.5rem;
     padding-top: 0.5rem;
 }
 
-#home, #group, #micro, #message, #call, #pres, #settings, #calendar{
-    /* position: relative; */
+#home,
+#group,
+#micro,
+#message,
+#call,
+#pres,
+#settings,
+#calendar {
     width: 40px;
     height: 40px;
-    /* left: 21px;
-    top: 182px; */
 }
 
-#settings{
+#settings {
     padding-bottom: 1rem;
 }
 
-#mid-nav{
+#mid-nav {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -37,7 +44,6 @@
 }
 
 .body {
-    background-color: lightblue;
     position: absolute;
     right: 0;
     top: 0;
@@ -52,19 +58,20 @@
 /* Title section */
 
 .title {
-    background-color: greenyellow;
+    margin: 0 31px;
     height: 10vh;
-
+    font-family: 'Inter', sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1.5px solid #465A5F;
 }
 
-.text{
+.text {
+    font-size: 27px;
     display: flex;
     flex-direction: column;
     text-align: left;
-
 }
 
 .icons {
@@ -79,9 +86,8 @@
 /* Profile section */
 
 .profile {
-    background-color: orange;
+    margin: 0 31px;
     height: 20vh;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,16 +96,26 @@
 /* Recent section */
 
 .recent {
-    background-color: pink;
     height: 35vh;
-
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: start;
+    
 }
 
-.mainboxes{
+.recent h3{
+    margin: 0 31px;
+    color: white;
+    font-size: 27px;
+}
+
+.available h3{
+    margin:0 31px;
+    color: white;
+    font-size: 27px;
+}
+.mainboxes {
     display: flex;
     justify-content: space-evenly;
     width: 95vw;
@@ -108,72 +124,72 @@
 /* Available section */
 
 .available {
-    background-color: violet;
+    /* background-color: violet; */
     height: 35vh;
-
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: start;
 }
 
-.mainboxes2{
+.mainboxes2 {
     display: flex;
     justify-content: space-evenly;
     width: 95vw;
 }
 
-#person{
+#person {
     width: 3rem;
 }
 
-#bell{
-    width:2rem;
+#bell {
+    width: 2rem;
 }
 
-#search{
-    width: 1.5rem;;
+#search {
+    width: 1.5rem;
+    ;
 }
 
-.sqInfo{
-    background:linear-gradient(138.24deg, rgba(241, 241, 241, 0.6) 11.36%, rgba(255, 255, 255, 0.409258) 29.96%, rgba(252, 252, 252, 0.311619) 47.64%, rgba(241, 241, 241, 0.01875) 100.66%, rgba(241, 241, 241, 0) 100.66%);
+.sqInfo {
+    background: linear-gradient(138.24deg, rgba(241, 241, 241, 0.6) 11.36%, rgba(255, 255, 255, 0.409258) 29.96%, rgba(252, 252, 252, 0.311619) 47.64%, rgba(241, 241, 241, 0.01875) 100.66%, rgba(241, 241, 241, 0) 100.66%);
     display: block;
-    width:197.68px;
+    width: 197.68px;
     height: 128.39px;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content:space-evenly;
-   margin-left: 8rem;
-   border-radius: 20px;
-   box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);
-   backdrop-filter: blur(20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 8rem;
+    border-radius: 20px;
+    box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(20px);
 }
 
-.sqbox{
+.sqbox {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
 }
 
-#appointment{
+#appointment {
     background: linear-gradient(180deg, rgba(241, 241, 241, 0.6) 0%, rgba(255, 255, 255, 0.409258) 83.63%, rgba(241, 241, 241, 0.01875) 148.66%, rgba(241, 241, 241, 0) 148.67%);
 }
 
-.sqboxButton button{
+.sqboxButton button {
     background-color: white;
-  color: black;
-  border-radius: 10px;
-  font-size: 20px;
-  padding: 10px 60px;
-  border-radius: 5px;
-  margin: 10px 0px;
-  cursor: pointer;
-  display: flex;
-  justify-content:center;
-  text-align:center;
-  font-family: 'Inter';
+    color: black;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px 60px;
+    border-radius: 5px;
+    margin: 10px 0px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -182,7 +198,7 @@
 
 }
 
-#clip{
+#clip {
     width: 40px;
     height: 40px;
     padding-right: 1rem;
