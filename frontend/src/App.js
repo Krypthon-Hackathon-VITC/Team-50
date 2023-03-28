@@ -1,6 +1,7 @@
 import './App.css';
 import { Questionare1 } from './components/Questionare1';
 import { Questionare2 } from './components/Questionare2';
+import { Questionare3 } from './components/Questionare3';
 import { useState } from 'react';
 import { MainLanding } from "./components/MainLanding";
 import { Choose } from './components/Choose'
@@ -11,6 +12,9 @@ import { PatientLogin } from "./components/PatientLogin";
 import {PatientRegister} from "./components/PatientRegister";
 import {DoctorLanding} from "./components/DoctorLanding";
 import {PatientLanding} from "./components/PatientLanding";
+import { DocLanding } from './components/DocLanding';
+
+
 
 function App() {
 
@@ -33,6 +37,8 @@ function App() {
         <Route exact path="/PatientLanding" element={<PatientLanding />} />
         <Route exact path="/DoctorLanding" element={<DoctorLanding />} />
         <Route exact path="/PatientLanding" element={<PatientLanding />} />
+        <Route exact path="/DocSlider" element={<DocLanding />} />
+        <Route exact path="/questionare3" element={<Questionare3 />} />
       </Routes>
     </div>
   );
