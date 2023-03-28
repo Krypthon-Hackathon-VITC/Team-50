@@ -1,7 +1,9 @@
 import React from 'react';
 import {PatientCard} from "./PatientCard";
+import 'swiper/css'
+import "swiper/css/free-mode";
 
-export const DocSlider = () => {
+export const DocLanding = () => {
   return (
     <div>
          <div className="bottom-container">
@@ -10,5 +12,3 @@ export const DocSlider = () => {
     </div>
   )
 }
-
-
