@@ -17,7 +17,6 @@ export const PatientLogin = ({ setLoginUser }) => {
         console.log('Login Failed:', res);
     };
 
-
     const navigate = useNavigate()
 
     function getCurrentURL() {
