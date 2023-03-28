@@ -5,6 +5,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { PatientCard } from './PatientCard';
 
 
+
 export const DoctorLanding = () => {
   const location = useLocation();
   return (
