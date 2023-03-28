@@ -47,6 +47,10 @@ export const PatientRegister = () => {
 
 
     return (
+        <div> 
+            <div className="artemis">
+            <img id='artemis-logo' src={require('../static/images/logo.png')} alt="Artemis Logo" />
+            </div>
         <div className="container">
             <div className="doc-img">
             <img id="doc-img" src={require('../static/images/login-register.png')} alt="login-register" />
@@ -73,6 +77,7 @@ export const PatientRegister = () => {
                     <span id='feed'></span>
                 </form>
             </div>
+        </div>
         </div>
     );
 }
