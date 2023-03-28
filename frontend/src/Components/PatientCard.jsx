@@ -1,11 +1,12 @@
 import React from 'react';
 import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { FreeMode } from "swiper";  
-import'./PatientCard.css';
+import { FreeMode } from "swiper";
+import './PatientCard.css';
 import 'swiper/css'
 import "swiper/css/free-mode";
 export const PatientCard = () => {
+    var i = 0;
     const [patients, setPatients] = useState([
         { name: 'Ravi', age: '25', gender: 'Male', diagnosis: 'Fever', id: 1 },
         { name: 'Geet', age: '29', gender: 'Female', diagnosis: 'Cough', id: 2 },
@@ -30,13 +31,13 @@ export const PatientCard = () => {
     ])
     return (
         <div className='card'>
-            
+
             <Swiper
                 freeMode={true}
                 grabCursor={true}
                 modules={[FreeMode]}
                 className="mySwiper"
-                slidesPerView={5}   
+                slidesPerView={5}
                 spaceBetween={30}
             >
                 {patients.map((patient) => (

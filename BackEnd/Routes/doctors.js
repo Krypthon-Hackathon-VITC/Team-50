@@ -21,6 +21,26 @@ router.post('/doctorForm', async (req, res) => {
     }
 });
 
+router.post('/doctors-details', (req, res) => {
+    const { employeeID } = req.body;
+
+    // Find doctor with matching name, email, and password
+    Doctor.findOne({ employeeID })
+        .then((doctor) => {
+            if (doctor) {
+                // Return doctor details if found
+                res.status(200).send(doctor);
+            } else {
+                // Return error message if doctor not found
+                res.status(404).send({ message: 'Doctor not found' });
+            }
+        })
+        .catch((error) => {
+            // Return error message if there is a database error
+            res.status(500).send({ message: 'Database error', error });
+        });
+});
+
 router.post('/doctor-details', (req, res) => {
     const { fullName, employeeID } = req.body;
 
