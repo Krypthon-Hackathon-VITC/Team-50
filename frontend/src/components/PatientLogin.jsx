@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import React, { useState } from 'react'
-import './PatientLogin.css';
 import axios from 'axios'
 import { useNavigate } from "react-router-dom";
 import { GoogleLogin } from '@react-oauth/google';

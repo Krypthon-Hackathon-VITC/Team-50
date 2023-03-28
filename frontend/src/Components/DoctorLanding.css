@@ -13,6 +13,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    z-index: 2;
 }
 
 #logo-small {
@@ -23,7 +24,7 @@
 #home,
 #group,
 #micro,
-#message,
+#chat,
 #call,
 #pres,
 #settings,
@@ -49,10 +50,6 @@
     top: 0;
     width: 95vw;
     height: 100vh;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 /* Title section */
@@ -116,7 +113,7 @@
     font-size: 27px;
 }
 .mainboxes {
-    display: flex;
+    /* display: flex; */
     justify-content: space-evenly;
     width: 95vw;
 }
@@ -133,7 +130,7 @@
 }
 
 .mainboxes2 {
-    display: flex;
+    /* display: flex; */
     justify-content: space-evenly;
     width: 95vw;
 }
@@ -192,7 +189,6 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
     line-height: 40px;
     letter-spacing: 0.07em;
 
