@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+
+.sidenav {
+    background-color: #E7ECF1;
+    height: 100vh;
+    width: 5vw;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+#logo-small {
+    width: 4.5rem;
+    padding-top: 0.5rem;
+}
+
+#home,
+#group,
+#micro,
+#chat,
+#call,
+#pres,
+#settings,
+#calendar {
+    width: 40px;
+    height: 40px;
+}
+
+#settings {
+    padding-bottom: 1rem;
+}
+
+#mid-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 30rem;
+}
+
+.body {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 95vw;
+    height: 100vh;
+}
+
+/* Title section */
+
+.title {
+    margin: 0 31px;
+    height: 10vh;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1.5px solid #465A5F;
+}
+
+.text {
+    font-size: 27px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.icons {
+    width: 10rem;
+    padding-right: 1rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Profile section */
+
+.profile {
+    margin: 0 31px;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Recent section */
+
+.recent {
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    
+}
+
+.recent h3{
+    margin: 0 31px;
+    color: white;
+    font-size: 27px;
+}
+
+.available h3{
+    margin:0 31px;
+    color: white;
+    font-size: 27px;
+}
+.mainboxes {
+    /* display: flex; */
+    justify-content: space-evenly;
+    width: 95vw;
+}
+
+/* Available section */
+
+.available {
+    /* background-color: violet; */
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.mainboxes2 {
+    /* display: flex; */
+    justify-content: space-evenly;
+    width: 95vw;
+}
+
+#person {
+    width: 3rem;
+}
+
+#bell {
+    width: 2rem;
+}
+
+#search {
+    width: 1.5rem;
+    ;
+}
+
+.sqInfo {
+    background: linear-gradient(138.24deg, rgba(241, 241, 241, 0.6) 11.36%, rgba(255, 255, 255, 0.409258) 29.96%, rgba(252, 252, 252, 0.311619) 47.64%, rgba(241, 241, 241, 0.01875) 100.66%, rgba(241, 241, 241, 0) 100.66%);
+    display: block;
+    width: 197.68px;
+    height: 128.39px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 8rem;
+    border-radius: 20px;
+    box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);
+    /* backdrop-filter: blur(20px); */
+}
+
+.sqbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#appointment {
+    background: linear-gradient(180deg, rgba(241, 241, 241, 0.6) 0%, rgba(255, 255, 255, 0.409258) 83.63%, rgba(241, 241, 241, 0.01875) 148.66%, rgba(241, 241, 241, 0) 148.67%);
+}
+
+.sqboxButton button {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px 60px;
+    border-radius: 5px;
+    margin: 10px 0px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.07em;
+
+}
+
+#clip {
+    width: 40px;
+    height: 40px;
+    padding-right: 1rem;
+}
+
+.sqboxButton button:hover{
+    border-color: black;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+#home:hover, #group:hover, #chat:hover, #calendar:hover, #settings:hover, #micro:hover, #call:hover, #pres:hover{
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em ;
+    transform: translateY(-0.25em);
+    cursor: pointer;
+    transition: 50ms;
+}
