@@ -8,11 +8,12 @@ import { DoctorLogin }  from './components/DoctorLogin';
 import { Chat }  from './components/Chat';
 import { Route, Routes } from "react-router-dom";
 import { PatientLogin } from "./components/PatientLogin";
-import {Questionare2} from "./components/Questionare2"
+import { PatientLanding } from "./components/PatientLanding";
+
 
 function App() {
 
-  const [setLoginUser] = useState({})
+  const [LoginUser, setLoginUser] = useState({})
 
 
   const email = "abhi@gmail.com"
@@ -27,6 +28,7 @@ function App() {
         <Route exact path="/PatientLogin" element={<PatientLogin setLoginUser={setLoginUser}/>} />
         <Route exact path="/questionare2" element={<Questionare2 />} />
         <Route exact path="/chat" element={<Chat username={email} />} />
+        <Route exact path="/PatientLanding" element={<PatientLanding />} />
       </Routes>
     </div>
   );
