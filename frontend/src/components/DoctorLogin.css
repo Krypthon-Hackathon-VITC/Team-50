@@ -1,6 +1,6 @@
 body {
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
   justify-content: center;
   /* align-items: center; */
   min-height: 100vh;
@@ -23,7 +23,7 @@ body {
 @media only screen and (max-width: 768px) {
   .container {
     position: absolute;
-    bottom: 5rem;
+    bottom: 7rem;
     left: 0rem;
     background-color: #e2f3fb;
     display: flex;
@@ -52,7 +52,7 @@ body {
 @media only screen and (min-width: 768px) {
   .container {
     position: absolute;
-    bottom: 7rem;
+    bottom: 15rem;
     left: 7rem;
     background-color: #e2f3fb;
     display: flex;
@@ -81,8 +81,8 @@ body {
 @media only screen and (min-width: 992px) {
   .container {
     position: absolute;
-    bottom: 1rem;
-    left: 12rem;
+    bottom: -1rem;
+    left: 13rem;
     background-color: #e2f3fb;
     display: flex;
     align-items: center;

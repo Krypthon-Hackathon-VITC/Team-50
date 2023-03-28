@@ -1,8 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { FreeMode } from "swiper";
-import 'swiper/css';
+import { FreeMode } from "swiper";  
+import 'swiper/css'
 import "swiper/css/free-mode";
 
 export const PatientCard = () => {
@@ -14,7 +14,6 @@ export const PatientCard = () => {
         { name: 'Sheena', age: '39', gender: 'Female', diagnosis: 'Diabetes', id: 5 },
         { name: 'Leena', age: '25', gender: 'Female', diagnosis: 'Artheritis', id: 6 },
         { name: 'Harpreet', age: '40', gender: 'Male', diagnosis: 'Headache', id: 7 },
-        { name: 'Raaga', age: '30', gender: 'Female', diagnosis: 'Obesity', id: 8 },
         { name: 'Raaga', age: '30', gender: 'Female', diagnosis: 'Obesity', id: 8 },
         { name: 'Ishani', age: '35', gender: 'Female', diagnosis: 'High BP', id: 9 },
         { name: 'Ishani', age: '35', gender: 'Female', diagnosis: 'High BP', id: 10 },
