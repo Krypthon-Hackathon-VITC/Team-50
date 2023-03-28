@@ -105,3 +105,21 @@ input {
     flex-direction: column;
     text-align: left;
 }
+
+.top-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.head-left{
+    border-bottom: 1px solid black;
+    width: 42rem;
+    text-align: left;
+
+}
+
+
+
+.each-element{
+    display: flex;
+}

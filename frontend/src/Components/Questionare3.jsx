@@ -25,7 +25,14 @@ export const Questionare3 = () => {
           <form >
             <label htmlFor="Communication">Preferred form of Communication</label>
             <input type="text" />
-            <label htmlFor="Preferences"></label>
+            <label htmlFor="Preferences">Healthcare Preferences</label>
+            <input type="text" />
+            <label htmlFor="Considerations">Religious/Cultural Considerations</label>
+            <input type="text" />
+            <label htmlFor="CurrIllness">Current Illness</label>
+            <input type="text" />
+            <label htmlFor="Status">Status</label>
+            <input type="text" />
           </form>
         </div>
       </div>
