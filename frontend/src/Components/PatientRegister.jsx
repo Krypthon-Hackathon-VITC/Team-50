@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { GoogleLogin } from '@react-oauth/google';
 import jwt_decode from "jwt-decode";
 
-export const PatientLogin = ({ setLoginUser }) => {
+export const PatientRegister = ({ setLoginUser }) => {
     const onLoginSuccess = (res) => {
         // console.log('Login Success:', res);
         var userObject = jwt_decode(res.credential);
@@ -72,8 +72,10 @@ export const PatientLogin = ({ setLoginUser }) => {
                 </div>
                 
                 <h1 id='welc'>Welcome to Artemis</h1>
-                <span id='ltya'>Login to your account</span>
+                <span id='ltya'>Register yourself</span>
                 <form className="login-credentials" onSubmit={submit}>
+                    <label className='EP' htmlFor="employee">Name</label>
+                    <input className='booxes' value={data.employee} type="text" placeholder="Email" id="employee" name="employee" onChange={(e) => handle(e)} />
                     <label className='EP' htmlFor="employee">Email</label>
                     <input className='booxes' value={data.employee} type="text" placeholder="Email" id="employee" name="employee" onChange={(e) => handle(e)} />
                     <label className='EP' htmlFor="password">Password</label>
@@ -83,11 +85,6 @@ export const PatientLogin = ({ setLoginUser }) => {
                     <p></p>
                     <span id='feed'></span>
                 </form>
-
-                <div className="other-login-ways">
-                    <p>Login using</p>
-                    <GoogleLogin onSuccess={onLoginSuccess} onError={onLoginFailure} />
-                </div>
             </div>
         </div>
     );

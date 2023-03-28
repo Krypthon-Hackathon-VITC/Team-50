@@ -26,6 +26,7 @@ function App() {
         <Route exact path="/DoctorLogin" element={<DoctorLogin setLoginUser={setLoginUser}/>} />
         <Route exact path="/questionare1" element={<Questionare1 />} />
         <Route exact path="/PatientLogin" element={<PatientLogin setLoginUser={setLoginUser}/>} />
+        <Route exact path="/PatientRegister" element={<PatientRegister />} />
         <Route exact path="/questionare2" element={<Questionare2 />} />
         <Route exact path="/chat" element={<Chat username={email} />} />
         <Route exact path="/PatientLanding" element={<PatientLanding />} />
