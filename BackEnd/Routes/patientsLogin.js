@@ -48,4 +48,35 @@ router.post('/login', async (req, res) => {
     }
 });
 
+router.post('/signup', async (req, res) => {
+    const { name, email, password } = req.body;
+
+    if (!name || !email || !password) {
+        res.status(400).json({ error: 'Name, email, and password are required' });
+        return;
+    }
+
+    if (!validator.isEmail(email)) {
+        res.status(400).json({ error: 'Invalid email format' });
+        return;
+    }
+
+    const existingPatient = await PatientLogin.findOne({ email });
+
+    if (existingPatient) {
+        res.status(409).json({ error: 'Email is already registered' });
+        return;
+    }
+
+    const patientLogin = PatientLogin({ name, email, password });
+
+    try {
+        await patientLogin.save();
+        res.status(201).json(patientLogin);
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ error: 'Server error' });
+    }
+});
+
 module.exports = router
