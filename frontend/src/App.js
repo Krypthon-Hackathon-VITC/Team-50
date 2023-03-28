@@ -8,8 +8,9 @@ import { DoctorLogin } from './components/DoctorLogin';
 import { Chat } from './components/Chat';
 import { Route, Routes } from "react-router-dom";
 import { PatientLogin } from "./components/PatientLogin";
-import { PatientLanding } from "./components/PatientLanding";
 import {PatientRegister} from "./components/PatientRegister";
+import {DoctorLanding} from "./components/DoctorLanding";
+import {PatientLanding} from "./components/PatientLanding";
 
 function App() {
 
@@ -29,6 +30,8 @@ function App() {
         <Route exact path="/PatientRegister" element={<PatientRegister />} />
         <Route exact path="/questionare2" element={<Questionare2 />} />
         <Route exact path="/chat" element={<Chat username={email} />} />
+        <Route exact path="/PatientLanding" element={<PatientLanding />} />
+        <Route exact path="/DoctorLanding" element={<DoctorLanding />} />
         <Route exact path="/PatientLanding" element={<PatientLanding />} />
       </Routes>
     </div>

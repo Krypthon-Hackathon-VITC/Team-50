@@ -1,10 +1,13 @@
 import React from 'react'
+import './PatientLanding.css'
 
 export const PatientLanding = () => {
   return (
     <div>
-      hello 
+      <p>saaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
     </div>
   )
 }
+
+
 

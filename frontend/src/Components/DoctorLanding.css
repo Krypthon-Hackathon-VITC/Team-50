@@ -1,0 +1,85 @@
+.sidenav {
+    background-color: blue;
+    height: 100vh;
+    width: 5vw;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.body {
+    background-color: lightblue;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 95vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Title section */
+
+.title {
+    background-color: greenyellow;
+    height: 10vh;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons {
+    width: 5rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Profile section */
+
+.profile {
+    background-color: orange;
+    height: 25vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Recent section */
+
+.recent {
+    background-color: pink;
+    height: 30vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.mainboxes{
+    display: flex;
+    justify-content: space-evenly;
+    width: 95vw;
+}
+
+/* Available section */
+
+.available {
+    background-color: violet;
+    height: 35vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.mainboxes2{
+    display: flex;
+    justify-content: space-evenly;
+    width: 95vw;
+}
