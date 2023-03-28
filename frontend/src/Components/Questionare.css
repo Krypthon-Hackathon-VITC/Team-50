@@ -1,23 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-    body {
-        text-align: center;
-        display: flex;
-        min-height: 100vh;
-        align-items: center;
-        color: black;
-        justify-content: center;
-        background-image: linear-gradient(79deg, #4356b1, #89caea 48%, #d6eaea);
-        background-size: cover;
-        background-repeat: no-repeat;
-        font-family: 'Inter', sans-serif;
-      }
-
-
-.navbar{
+.navbar {
     display: flex;
     position: absolute;
     width: 95%;
@@ -32,24 +18,22 @@
 
 
 
-#artemis-logo{
+#artemis-logo {
     width: 12rem;
     scale: 1.25;
 }
 
-#person-logo{
+#person-logo {
     width: 4rem;
 }
 
-.logo{
+.logo {
     margin-left: 1.65rem;
 }
 
-.personLogo{
+.personLogo {}
 
-}
-
-.box{
+.box {
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -63,7 +47,7 @@
     margin-top: 4rem;
 }
 
-.top{
+.top {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -72,35 +56,36 @@
 
 }
 
-.top-left{
+.top-left {
     border-bottom: 1px solid black;
     width: 42rem;
     text-align: left;
 }
 
-.main-box{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.main-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.main-box-left{
+.main-box-left {
     display: flex;
     flex-direction: column;
     text-align: left
 }
 
-.main-box-right{
+.main-box-right {
     display: flex;
     flex-direction: column;
     text-align: left;
 }
 
-.address{
+.address {
     display: flex;
     flex-direction: column;
     text-align: left;
 }
+
 input {
     margin: 0.5rem 0;
     border: none;
@@ -108,19 +93,19 @@ input {
     border-radius: 10px;
     background-color: #E0E0E0;
     width: 25rem;
-    height: 0.5rem; 
-  }
+    height: 0.5rem;
+}
 
-  #text-area{
+#text-area {
     margin: 0.5rem 0;
     border: none;
     padding: 1rem;
     border-radius: 10px;
     background-color: #E0E0E0;
-  }
+}
 
-  .query-box{
+.query-box {
     display: flex;
     flex-direction: column;
     text-align: left;
-  }
+}
