@@ -34,16 +34,17 @@
     flex-direction: column;
     background-color: white;
     width: 70rem;
-    height: 27rem;
-    border-radius: 4px;
+    height: 35rem;
+    border-radius: 10px;
     color: black;
     padding: 0 4rem;
     padding-top: 1rem;
-    padding-bottom: 4rem;
-    margin-top: 4rem;
+    position: absolute;
+    top: 9rem;
+    left: 9rem;
 }
 
-.top {
+.top2 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -104,4 +105,39 @@ input {
     display: flex;
     flex-direction: column;
     text-align: left;
+}
+
+.top-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.head-left {
+    border-bottom: 1px solid black;
+    width: 42rem;
+    text-align: left;
+}
+
+.each-element {
+    display: flex;
+}
+
+.bottomBox{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.bottomBox button{
+    margin-top: 1rem;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex input{
+    width: 50rem;
 }

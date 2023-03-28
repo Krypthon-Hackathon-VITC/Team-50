@@ -1,7 +1,6 @@
 import React from 'react';
 import './Questionare.css';
-
-
+import { Link } from "react-router-dom";
 
 export const Questionare1 = () => {
   return (
@@ -9,16 +8,14 @@ export const Questionare1 = () => {
       <nav className='navbar'>
         <div className="logo">
           <img id='artemis-logo' src={require('../static/images/logo.png')} alt="Artemis Logo" />
-        {/* <img id='artemis-logo' src={require('../static/images/logo.png')} alt="Artemis Logo" /> */}
         </div>
         <div className="personLogo">
           <img id='person-logo' src={require('../static/images/personLogo.png')} alt="Person Logo" />
-        {/* <img id='person-logo' src={require('../static/images/personLogo.png')} alt="Person Logo" /> */}
         </div>
       </nav>
 
       <div className="box">
-        <div className="top">
+        <div className="top2">
           <div className="top-left"><h1>Basics</h1> </div>
           <div className="top-right"><h1>1/3</h1> </div>
         </div>
@@ -38,10 +35,11 @@ export const Questionare1 = () => {
             <input type="date" />
             <label htmlFor="BloodGroup">Blood Group</label>
             <input type="text" />
-
           </div>
-        
-       </div>
+        </div>
+        <div className="bottomBox">
+          <Link to="http://localhost:3000/questionare2"><button>Next</button></Link>
+        </div>
       </div>
     </>
   )
