@@ -66,7 +66,3 @@ export const DoctorLanding = () => {
     </div>
   )
 }
-
-
-
-
