@@ -9,7 +9,7 @@ import { Chat }  from './components/Chat';
 import { Route, Routes } from "react-router-dom";
 import { PatientLogin } from "./components/PatientLogin";
 import { PatientLanding } from "./components/PatientLanding";
-
+import {PatientRegister} from "./components/PatientRegister";
 
 function App() {
 

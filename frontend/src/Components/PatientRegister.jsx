@@ -2,23 +2,8 @@ import { Link } from "react-router-dom";
 import React, { useState } from 'react'
 import './PatientLogin.css';
 import axios from 'axios'
-import { useNavigate } from "react-router-dom";
-import { GoogleLogin } from '@react-oauth/google';
-import jwt_decode from "jwt-decode";
 
-export const PatientRegister = ({ setLoginUser }) => {
-    const onLoginSuccess = (res) => {
-        // console.log('Login Success:', res);
-        var userObject = jwt_decode(res.credential);
-        console.log(userObject)
-    };
-
-    const onLoginFailure = (res) => {
-        console.log('Login Failed:', res);
-    };
-
-
-    const navigate = useNavigate()
+export const PatientRegister = () => {
 
     function getCurrentURL() {
         return window.location.href
@@ -28,23 +13,23 @@ export const PatientRegister = ({ setLoginUser }) => {
 
     const [data, setData] = useState({
         email: '',
-        pass: ''
+        pass: '',
+        name: ''
     })
 
-    const feed = document.querySelector('#feed')
-
-    const url = 'http://localhost:3001/api/patientsLogin/login'
+    const url = 'http://localhost:3001/api/patientsLogin/signup'
+    const successMsg = 'succesfully registered. Login with your credentials!'
 
     function submit(e) {
         e.preventDefault();
         axios.post(url, {
             "email": data.email,
-            "password": data.pass
+            "password": data.pass,
+            "name": data.name
         })
             .then(res => {
-                console.log(res.data)
-                setLoginUser(res.data.user)
-                navigate("/PatientLanding")
+                console.log(res.data.error ? res.data.error : res.data)
+                feed.textContent = successMsg
             })
             .catch(err => {
                 console.log(err)
@@ -54,10 +39,12 @@ export const PatientRegister = ({ setLoginUser }) => {
 
     function handle(e) {
         const newdata = { ...data }
-        newdata[e.target.id] = e.target.value
-        setData(newdata)
-        // console.log(newdata)
+        newdata[e.target.id] = e.target.value;
+        setData(newdata);
     }
+
+    const feed = document.querySelector('#feed')
+
 
     return (
         <div className="container">
@@ -75,12 +62,12 @@ export const PatientRegister = ({ setLoginUser }) => {
                 <span id='ltya'>Register yourself</span>
                 <form className="login-credentials" onSubmit={submit}>
                     <label className='EP' htmlFor="employee">Name</label>
-                    <input className='booxes' value={data.employee} type="text" placeholder="Email" id="employee" name="employee" onChange={(e) => handle(e)} />
+                    <input className='booxes' value={data.name} type="text" placeholder="name" id="name" name="name" onChange={(e) => handle(e)} />
                     <label className='EP' htmlFor="employee">Email</label>
-                    <input className='booxes' value={data.employee} type="text" placeholder="Email" id="employee" name="employee" onChange={(e) => handle(e)} />
+                    <input className='booxes' value={data.email} type="text" placeholder="Email" id="email" name="email" onChange={(e) => handle(e)} />
                     <label className='EP' htmlFor="password">Password</label>
                     <input className='booxes' value={data.pass} type="password" placeholder="********" id="pass" name="pass" onChange={(e) => handle(e)} />
-                    <button id="DoclogIn" type="submit">Log In</button>
+                    <button id="DoclogIn" type="submit">Sign Up</button>
                     <p></p>
                     <p></p>
                     <span id='feed'></span>
