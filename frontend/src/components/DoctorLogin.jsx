@@ -78,9 +78,7 @@ export const DoctorLogin = ({ setLoginUser }) => {
                         </div>
                     </form>
 
-                    <div className="other-login-ways">
-                        <p>Login using</p>
-                    </div>
+                    
                 </div>
             </div>
         </div>

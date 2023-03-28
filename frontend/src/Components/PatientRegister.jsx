@@ -16,7 +16,7 @@ export const PatientRegister = () => {
         pass: '',
         name: ''
     })
-
+    
     const url = 'http://localhost:3001/api/patientsLogin/signup'
     const successMsg = 'succesfully registered. Login with your credentials!'
 
