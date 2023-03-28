@@ -1,5 +1,6 @@
 import React from 'react'
 import './DoctorLanding.css'
+import { Link } from 'react-router-dom';
 
 export const PatientLanding = () => {
   return (
@@ -10,7 +11,9 @@ export const PatientLanding = () => {
                         <img id='home'  src={require('../static/images/home.jpg')} />
                         <img id='group'  src={require('../static/images/group.png')} />
                         <img id='micro'  src={require('../static/images/micro.jpg')} />
-                        <img id='message'  src={require('../static/images/message.jpg')} />
+                        <Link to='/Chat'>
+                            <img id='chat'  src={require('../static/images/chat.jpg')} />
+                        </Link>
                         <img id='call'  src={require('../static/images/call.jpg')} />
                         <img id='pres'  src={require('../static/images/pres.jpg')} />
                     </div>
@@ -30,7 +33,9 @@ export const PatientLanding = () => {
         </div>
         <div className="profile">
           <div className="sqboxButton">
-            <button><img id='clip' src={require('../static/images/clipboard.png')}/>Take A Quick Diagnostic Quiz</button>
+            <a href='http://localhost:3000/Questionare1'>
+              <button><img id='clip' src={require('../static/images/clipboard.png')}/>Take A Quick Diagnostic Quiz</button>
+            </a>
           </div>
         </div>
         <div className="recent">

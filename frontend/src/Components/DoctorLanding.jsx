@@ -1,5 +1,6 @@
-import React from 'react'
-import './DoctorLanding.css'
+import React from 'react';
+import './DoctorLanding.css';
+import { Link } from 'react-router-dom';
 
 export const DoctorLanding = () => {
   return (
@@ -9,7 +10,9 @@ export const DoctorLanding = () => {
                     <div id='mid-nav'>
                         <img id='home'  src={require('../static/images/home.jpg')} />
                         <img id='group'  src={require('../static/images/group.png')} />
-                        <img id='message'  src={require('../static/images/message.jpg')} />
+                        <Link to='/Chat'>
+                            <img id='chat'  src={require('../static/images/chat.jpg')} />
+                        </Link>
                         <img id='calendar'  src={require('../static/images/calendar.png')} />
                     </div>
                 <img id='settings'  src={require('../static/images/settings.png')} />

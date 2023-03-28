@@ -17,7 +17,7 @@
     padding-top: 0.5rem;
 }
 
-#home, #group, #micro, #message, #call, #pres, #settings, #calendar{
+#home, #group, #micro, #chat, #call, #pres, #settings, #calendar{
     /* position: relative; */
     width: 40px;
     height: 40px;
