@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { FreeMode } from "swiper";  
+import'./PatientCard.css';
 import 'swiper/css'
 import "swiper/css/free-mode";
 export const PatientCard = () => {

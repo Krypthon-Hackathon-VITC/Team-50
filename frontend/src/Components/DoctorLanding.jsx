@@ -1,10 +1,12 @@
 import React from 'react';
 import './DoctorLanding.css';
 import { Link } from 'react-router-dom';
+import { useLocation, useNavigate } from "react-router-dom";
 import { PatientCard } from './PatientCard';
 
 
 export const DoctorLanding = () => {
+  const location = useLocation();
   return (
     <div>
       <div className="sidenav">
@@ -21,9 +23,9 @@ export const DoctorLanding = () => {
       </div>
       <div className="body">
         <div className="title">
-          <div className="text">
-            <span id='greet'>  Good Morning, <span id='name'> Dr. Mishra</span> </span>
-            <span id='small-text'>Only a life lived in the service to others is worth living</span>
+          <div className="text"> 
+            <span id='greet'>  Welcome, <span id='name'>{location.state.id}</span> </span>
+            <span>Only a life lived in the service to others is worth living</span>
           </div>
           <div className="icons">
             <span className="sq"><img id='search' src={require('../static/images/search.png')} /></span>

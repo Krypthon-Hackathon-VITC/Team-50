@@ -1,12 +1,16 @@
 import { Link } from "react-router-dom";
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import {createContext} from "react";
 import axios from 'axios'
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { GoogleLogin } from '@react-oauth/google';
 import jwt_decode from "jwt-decode";
-import {PatientLanding} from "../components/PatientLanding";
+import { PatientLanding } from "./PatientLanding";
+
 
 export const PatientLogin = ({ setLoginUser }) => {
+
+
     const onLoginSuccess = (res) => {
         // console.log('Login Success:', res);
         var userObject = jwt_decode(res.credential);
@@ -41,9 +45,10 @@ export const PatientLogin = ({ setLoginUser }) => {
             "password": data.pass
         })
             .then(res => {
-                console.log(res.data)
-                setLoginUser(res.data.user)
-                navigate("/PatientLanding")
+                console.log(res.data);
+                setLoginUser(res.data.user);
+                const data=res.data.name;
+                navigate("/PatientLanding", {state:{id:data}})
             })
             .catch(err => {
                 console.log(err)
