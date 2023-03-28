@@ -8,7 +8,7 @@ import { DoctorLogin } from './components/DoctorLogin';
 import { Chat } from './components/Chat';
 import { Route, Routes } from "react-router-dom";
 import { PatientLogin } from "./components/PatientLogin";
-import {PatientRegister} from "./components/PatientRegister";
+import { PatientRegister } from "./components/PatientRegister";
 
 
 function App() {
@@ -25,7 +25,8 @@ function App() {
         <Route exact path="/choose" element={<Choose />} />
         <Route exact path="/DoctorLogin" element={<DoctorLogin setLoginUser={setLoginUser} />} />
         <Route exact path="/questionare1" element={<Questionare1 />} />
-        <Route exact path="/PatientLogin" element={<PatientLogin setLoginUser={setLoginUser}/>} />
+        <Route exact path="/PatientLogin" element={<PatientLogin setLoginUser={setLoginUser} />} />
+        <Route exact path="/PatientRegister" element={<PatientRegister />} />
         <Route exact path="/questionare2" element={<Questionare2 />} />
         <Route exact path="/chat" element={<Chat username={email} />} />
       </Routes>
