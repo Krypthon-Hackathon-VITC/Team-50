@@ -13,7 +13,7 @@
 #login-register {
 
     text-decoration: none;
-    background: none;
+    background-color: #f9a12d;;
     color: black;
     position: absolute;
     top: 2rem;
@@ -24,6 +24,10 @@
     font-family: 'Lato', sans-serif;
     /* font-weight: 400px; */
     z-index: 2;
+}
+
+#login-register:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
 .box2 {
