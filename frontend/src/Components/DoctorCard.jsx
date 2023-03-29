@@ -5,6 +5,7 @@ import { FreeMode } from "swiper";
 import'./PatientCard.css';
 import 'swiper/css'
 import "swiper/css/free-mode";
+
 export const DoctorCard = () => {
     const [doctors, setDoctors] = useState([
         { name: 'Dr. Ramesh R.',  speciality: 'Cardiologist',  id: 1 },
@@ -15,7 +16,14 @@ export const DoctorCard = () => {
         { name: 'Dr. Lisa C.',  speciality: 'Oncologist', id: 6 },
         { name: 'Dr. Chase R.',  speciality: 'Pediatrician', id: 7 },
         { name: 'Dr. Ramesh R.',  speciality: 'Psychiatrist',  id: 8 },
-       
+        // img: '../static/Docs/1.png', 
+        // img: '../static/Docs/2.png', 
+        // img: '../static/Docs/3.png', 
+        // img: '../static/Docs/4.png', 
+        // img: '../static/Docs/5.png', 
+        // img: '../static/Docs/6.png', 
+        // img: '../static/Docs/7.png', 
+        // img: '../static/Docs/1.png', 
     ])
     return (
         <div className='card'>
@@ -30,9 +38,10 @@ export const DoctorCard = () => {
             >
                 {doctors.map((doctor) => (
                     <SwiperSlide>
+                        {/* <img src={require(doctor.img)} alt="none" /> */}
                         <div className="doctorDetails" key={doctor.id}>
-                            <p>Name:{doctor.name}</p>
-                            <p>Speciality:{doctor.speciality}</p>
+                            <p id='ddo'>{doctor.name}</p>
+                            <p id='ddt'>Speciality:{doctor.speciality}</p>
                             <button>Book</button>
                         </div>
                     </SwiperSlide>
