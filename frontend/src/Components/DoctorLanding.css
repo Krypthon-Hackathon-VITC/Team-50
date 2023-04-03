@@ -93,25 +93,25 @@
 /* Recent section */
 
 .recent {
-    height: 35vh;
+    height: 25vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: start;
-    
 }
 
-.recent h3{
+.recent h3 {
     margin: 0 31px;
     color: white;
     font-size: 27px;
 }
 
-.available h3{
-    margin:0 31px;
+.available h3 {
+    margin: 0 31px;
     color: white;
     font-size: 27px;
 }
+
 .mainboxes {
     /* display: flex; */
     justify-content: space-evenly;
@@ -121,8 +121,9 @@
 /* Available section */
 
 .available {
+    margin-top: 4rem;
     /* background-color: violet; */
-    height: 35vh;
+    height: 25vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -200,21 +201,28 @@
     padding-right: 1rem;
 }
 
-.number{
+.number {
     color: #F9A12D;
     font-size: 40px;
 }
 
 
-.sqboxButton button:hover{
+.sqboxButton button:hover {
     border-color: black;
     cursor: pointer;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
-#home:hover, #group:hover, #chat:hover, #calendar:hover, #settings:hover, #micro:hover, #call:hover, #pres:hover{
+#home:hover,
+#group:hover,
+#chat:hover,
+#calendar:hover,
+#settings:hover,
+#micro:hover,
+#call:hover,
+#pres:hover {
     color: white;
-    box-shadow: 0 0.5em 0.5em -0.4em ;
+    box-shadow: 0 0.5em 0.5em -0.4em;
     transform: translateY(-0.25em);
     cursor: pointer;
     transition: 50ms;
