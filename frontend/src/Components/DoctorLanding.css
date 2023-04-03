@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
 
-
 .sidenav {
     background-color: #70b2ff;
     height: 100vh;
@@ -44,13 +43,13 @@
     height: 30rem;
 }
 
-.body {
+/* .body {
     position: absolute;
     right: 0;
     top: 0;
     width: 95vw;
     height: 100vh;
-}
+} */
 
 /* Title section */
 
