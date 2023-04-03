@@ -20,13 +20,6 @@ import { PatientInfo } from './components/PatientInfo';
 function App() {
 
   const [LoginUser, setLoginUser] = useState({})
-  // const [name, setName] = useState('Abhi')
-
-  // const cName = (n) => {
-  //   setName(n);
-  // }
-
-  // console.log(name);
 
   const email = "abhi@gmail.com"
 
